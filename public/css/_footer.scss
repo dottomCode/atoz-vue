@@ -1,0 +1,90 @@
+$color-orange: #f2693e;
+$color-green: #197D72;
+$color-text: #4a4a4a;
+
+$font-light : AvenirNext-light;
+$font-regular : AvenirNext-Regular;
+$font-medium : AvenirNext-Medium;
+$font-bold : AvenirNext-Bold;
+$font-demi-bold : AvenirNext-DemiBold;
+$font-heavy : AvenirNext-Heavy;
+
+footer {
+   background-color: #25282b;
+   color: white;
+   position: relative;
+
+   .h5 {
+      font-family: $font-bold;
+   }
+
+   .foot-logo {
+      img {
+         max-width: 200px;
+      }
+   }
+
+   .quick-link {
+      color: $color-orange;
+
+      a {
+         color: $color-orange;
+         font-family: $font-medium;
+
+         &:hover {
+            color: white;
+            transition: 0.5s color;
+            text-decoration: none;
+         }
+      }
+   }
+
+   .btn-download {
+      img {
+         max-width: 130px;
+      }
+   }
+
+   .sosmed {
+
+      a {
+         color: $color-orange;
+
+         &:hover {
+            color: white;
+         }
+      }
+   }
+
+   .sub-footer {
+      font-size: 12px;
+
+      p {
+         font-family: $font-medium;
+      }
+   }
+
+   .btn-top {
+      // background-color: $color-green;
+      border: 2px solid $color-orange;
+      position: absolute;
+      bottom: 20px;
+      left: 20px;
+      color: $color-orange;
+      transition: .3s all ease;
+
+      &:hover {
+         transition: .3s all ease;
+         background-color: $color-orange;
+         color: white;
+      }
+
+      i {
+         font-size: 20px;
+      }
+   }
+}
+
+.launcher {
+   display: none;
+}

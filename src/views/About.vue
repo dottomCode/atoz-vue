@@ -1,16 +1,34 @@
 <template>
   <div class="about">
-    <h1>This is an about page</h1>
+     <Header />
+    <main>
+     <AtozpayAbout />
+    </main>
+    <Footer />
+    <Launcher />
   </div>
 </template>
 
 <script>
+// @ is an alias to /src
+import 'bootstrap/dist/css/bootstrap.css'
+import 'bootstrap-vue/dist/bootstrap-vue.css'
+
+
+
+import Header from '@/components/Header.vue';
+import AtozpayAbout from '@/components/AtozpayAbout';
+import Footer from '@/components/Footer.vue';
+import Launcher from '@/components/Launcher.vue';
+
 
 export default {
-  name: 'Home',
+  name: 'About',
   components: {
-    
+    Header,
+    AtozpayAbout,
+    Footer,
+    Launcher
   }
 }
 </script>
-

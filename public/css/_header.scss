@@ -1,0 +1,78 @@
+$color-orange: #f2693e;
+$color-green: #197D72;
+$color-text: #4a4a4a;
+
+$font-light : AvenirNext-light;
+$font-regular : AvenirNext-Regular;
+$font-medium : AvenirNext-Medium;
+$font-bold : AvenirNext-Bold;
+$font-demi-bold : AvenirNext-DemiBold;
+$font-heavy : AvenirNext-Heavy;
+
+.navbar {
+
+   .navbar-brand {
+      img {
+         max-width: 140px;
+      }
+   }
+
+   .navbar-collapse {
+      .navbar-nav {
+         .nav-item {
+            .nav-link {
+               font-family: $font-demi-bold;
+               font-size: 14px;
+               text-transform: uppercase;
+               color: $color-text;
+
+               &:hover {
+                  color: $color-orange;
+               }
+
+               &.disabled {
+                  color: rgba(0, 0, 0, .3);
+               }
+            }
+         }
+      }
+   }
+}
+
+header {
+   .title {
+      background-image: radial-gradient(circle at 29% 45%, #ffb800, #f16134 48%);
+      display: flex;
+      align-items: center;
+      height: 100vh;
+      overflow: hidden;
+      padding-top: 150px;
+
+      h1 {
+         color: white;
+         font-size: 70px;
+         font-family: $font-heavy;
+         text-shadow: -8px -1px 0px #f99614;
+      }
+   }
+
+   .page-about {
+      background-image: radial-gradient(circle at 75% 41%, #ffd443 0%, #f16134 64%);
+      color: white;
+      height: 100vh;
+      overflow: hidden;
+      padding-top: 150px;
+
+      &__title {
+         h2 {
+            font-family: $font-bold;
+         }
+      }
+
+      &__img {
+         img {
+            width: 30rem;
+         }
+      }
+   }
+}
