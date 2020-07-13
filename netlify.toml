@@ -1,4 +1,10 @@
 [build]
-  command = "yarn build"
+  command = "npm run build"
   functions = "lambda"
   publish = "dist"
+  base ="client"
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
