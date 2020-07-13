@@ -2,7 +2,6 @@
   command = "npm run build"
   functions = "lambda"
   publish = "dist"
-  base ="client"
 
 [[redirects]]
   from = "/*"
